@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: 90%;
+}
+
+.currentMusicTitle h5 {
+    color: #7451EB;
+    margin: 2px;
+}
+
+.card-body h5 {
+    color: #7451EB;
+}
+
+.rangeGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.musicCardGroup {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.musicCard {
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    border: 1px solid #7451EB;
+    color: #7451EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; */
+}
+
+.bi-stop,
+.bi-play {
+    cursor: pointer;
+}
+
+.turnOFF {
+    border: 1px solid grey;
+    cursor: not-allowed;
+}
+
+/* Media queries */
+@media (max-width: 780px) {
+    .card-header {
+        display: flex;
+        flex-direction: column;
+    }
+}
